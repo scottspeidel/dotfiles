@@ -1,5 +1,8 @@
 echo "Installing zsh"
 curl -L github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+rm ~/.zshrc
+ln -s ~/src/github/scottspeidel/dotfiles/zshrc ~/.zshrc
+source ~/.zshrc
 
 echo "# Installing Macvim"
 brew install macvim --override-system-vim
