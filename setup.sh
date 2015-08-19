@@ -1,13 +1,13 @@
-# Install Macvim
+echo "# Installing Macvim"
 brew install macvim --override-system-vim
 
-# install tmux
+echo "# Installing tmux"
 brew install tmux
 
-# install vundle to manage vim plugins 
+echo "# installing vundle" 
 git clone https://github.com/gmarik/Vundle.vim.git ~/src/github/scottspeidel/vim/bundle/vundle
 
-# Integrate with OSX System Clipboard
+echo "# Installing reattach-to-user-namespace"
 brew install reattach-to-user-namespace
 
 # Create Symlinks
@@ -17,5 +17,5 @@ ln -s ~/src/github/scottspeidel/vim ~/.vim
 ln -s ~/src/github/scottspeidel/tmux.conf ~/.tmux.conf
 
 # Create Backup directory for Vim
-mkdir  ~/src/github/scottspeidel/vim
-mkdir  ~/src/github/scottspeidel/vim/backup
+mkdir  ~/src/github/scottspeidel/dotfiles/vim
+mkdir  ~/src/github/scottspeidel/dotfiles/vim/backup
