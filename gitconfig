@@ -1,0 +1,43 @@
+[user]
+	name = Scott Speidel
+	email = scottspeidel@gmail.com
+[core]
+	excludesfile = /Users/scottspeidel/.gitignore
+	ignorecase = false
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+[branch "master"]
+	merge = master
+[alias]
+	who = shortlog -s -n --no-merges
+	standup = shortlog --since=yesterday
+	today = shortlog --since=midnight
+	uncommit = reset --soft HEAD^
+	unref = reset --soft HEAD@{1}
+	subs = submodule foreach git pull origin master
+        hist = recent-branches
+[gist]
+	private = yes
+	extension = rb
+[init]
+	templatedir = ~/.git_template
+[push]
+	default = current
+[web]
+	browser = open
+[merge]
+	tool = vimdiff
+
+[mergetool "vimdiff"]
+	cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
+	trustExitCode = true
+[branch]
+	autosetuprebase = always
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
