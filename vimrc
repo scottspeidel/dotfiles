@@ -2,24 +2,6 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
-
-" let vundle manage vundle
-Plugin 'gmarik/vundle'
-
-" list all plugins that you'd like to install here
-Plugin 'kien/ctrlp.vim' " fuzzy find files
-Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plugin 'benmills/vimux'
-Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in
-Plugin 'janko-m/vim-test' 
-Plugin 'mileszs/ack.vim'
-
-call vundle#end()
-filetype plugin indent on
-
 " load plugins from vundle
 filetype off
 
@@ -35,6 +17,8 @@ Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plugin 'janko-m/vim-test' 
+Plugin 'mileszs/ack.vim'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -42,6 +26,9 @@ Plugin 'chriskempson/base16-vim'
 " JavaScript plugins
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
+
+
+
 
 call vundle#end()
 filetype plugin indent on
