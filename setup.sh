@@ -28,3 +28,7 @@ mkdir  ~/src/github/scottspeidel/dotfiles/vim/backup
 
 echo "# installing vundle" 
 git clone https://github.com/gmarik/Vundle.vim.git ~/src/github/scottspeidel/dotfiles/vim/bundle/vundle
+
+echo "Base 16 shell colors"
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+

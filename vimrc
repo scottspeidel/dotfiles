@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'janko-m/vim-test' 
 Plugin 'mileszs/ack.vim'
+Plugin 'chrisbra/vim-diff-enhanced'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -26,9 +27,6 @@ Plugin 'chriskempson/base16-vim'
 " JavaScript plugins
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
-
-
-
 
 call vundle#end()
 filetype plugin indent on
@@ -93,7 +91,7 @@ set encoding=utf8
 let base16colorspace=256  " Access colors present in 256 colorspace"
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 set background=dark
-colorscheme delek
+colorscheme base16-default
 
 set number
 

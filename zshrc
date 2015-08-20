@@ -58,6 +58,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/loca
 
 source $ZSH/oh-my-zsh.sh
 
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -85,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Directories
 alias appf='cd ~/src/github/appfolio'
-alias dots='vi ~/src/github/scottspeidel/dotfiles'
+alias dots='cd ~/src/github/scottspeidel/dotfiles && vi .'
 alias ss="cd ~/src/github/scottspeidel"
 
 # Ruby
