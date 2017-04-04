@@ -101,8 +101,11 @@ alias bac="brake assets:clobber"
 alias bs="brake solr:reindex"
 alias rit="ruby -Itest"
 
-
 # Git
 alias g="git"
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%h - %an, %ar : %s'"
+
+# Misc
+alias hog="history | grep"
+alias peg="ps -ef | grep"
