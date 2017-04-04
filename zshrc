@@ -93,7 +93,14 @@ alias dots='cd ~/src/github/scottspeidel/dotfiles && vi .'
 alias ss="cd ~/src/github/scottspeidel"
 
 # Ruby
-alias brake="bundle exec rake"
+alias brake="noglob bundle exec rake"
+alias rake="noglob rake"
+alias b="bundle"
+alias ber="bundle exec rake"
+alias bac="brake assets:clobber"
+alias bs="brake solr:reindex"
+alias rit="ruby -Itest"
+
 
 # Git
 alias g="git"
