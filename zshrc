@@ -88,7 +88,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Directories
-alias appf='cd ~/src/github/appfolio'
 alias dots='cd ~/src/github/scottspeidel/dotfiles && vi .'
 alias ss="cd ~/src/github/scottspeidel"
 
